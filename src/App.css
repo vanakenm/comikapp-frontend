@@ -1,0 +1,51 @@
+h1 {
+    font-size: 48px;
+}
+
+.main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comic-title {
+    font-size: 18px;
+    text-decoration: underline;
+    display: block;
+}
+
+.comic-list {
+    list-style: none;
+    flex-direction: column;
+}
+
+.comic-item {
+    padding: 5px;
+    background-color: #DDDDDD;
+    margin-bottom: 5px;
+    
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.navbar {
+    width: 100vw;
+    background-color: orange;
+    overflow: hidden;
+}

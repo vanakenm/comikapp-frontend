@@ -1,19 +1,17 @@
 import { Col, Container, Image, Nav, Row } from "react-bootstrap";
+import "./App.css";
+import Navigation from "./components/NavBar";
+import { Outlet } from "react-router";
+import { useState } from "react";
 
 function App() {
+  const [user, setUser] = useState({ name: "Bob", id: 1 });
+
   return (
     <Container>
-      <Image
-        src="https://static.wixstatic.com/media/2524ce_cb266239a431485aa92c419e50505f7a~mv2.png"
-        className="mx-auto d-block"
-      />
+      <Navigation user={user} setUser={setUser} />
       <Row>
-        <h1 className="text-center">HYF Frontend template</h1>
-        <Col>
-          <Nav.Link href="/recipes" className="text-center">
-            Recipes List
-          </Nav.Link>
-        </Col>
+        <Outlet context={[user, setUser]} />
       </Row>
     </Container>
   );
