@@ -18,8 +18,6 @@ export default function NewComicsPage() {
     console.log(series);
     console.log(title);
     console.log(publisher);
-    ss;
-
     let result = await Api.addComic({ title, series, publisher });
     navigate("/mycomics");
   }
