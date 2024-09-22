@@ -1,4 +1,3 @@
-// This is fixed, we'll see later how to update it.
 const url = import.meta.env.VITE_APP_API_URL;
 
 const Api = {
